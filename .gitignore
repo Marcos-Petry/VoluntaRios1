@@ -33,3 +33,8 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Ignorar arquivos de gerenciamento de pacotes
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
