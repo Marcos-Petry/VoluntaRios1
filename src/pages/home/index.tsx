@@ -28,25 +28,40 @@ export default function TelaHome({ navigation }: Props) {
           </Text>
 
           <View style={homeStyles.buttonContainer}>
-            <TouchableOpacity style={homeStyles.button}>
-              <Text style={homeStyles.buttonText}>financeiro</Text>
+            <TouchableOpacity
+              style={homeStyles.button}
+              onPress={() => navigation.navigate('Financeiro')}
+            >
+              <Text style={homeStyles.buttonText}>Financeiro</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={homeStyles.button}>
-              <Text style={homeStyles.buttonText}>local</Text>
+
+            <TouchableOpacity
+              style={homeStyles.button}
+              onPress={() => navigation.navigate('Localizacao')}
+            >
+              <Text style={homeStyles.buttonText}>Localização</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={homeStyles.button}>
-              <Text style={homeStyles.buttonText}>história</Text>
+
+            <TouchableOpacity
+              style={homeStyles.button}
+              onPress={() => navigation.navigate('Historia')}
+            >
+              <Text style={homeStyles.buttonText}>História</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={homeStyles.button}>
-              <Text style={homeStyles.buttonText}>contatos</Text>
+
+            <TouchableOpacity
+              style={homeStyles.button}
+              onPress={() => navigation.navigate('Contato')}
+            >
+              <Text style={homeStyles.buttonText}>Contatos</Text>
             </TouchableOpacity>
           </View>
         </View>
       </ScrollView>
 
       {/* Botão de Login reduzido e posicionado acima do rodapé */}
-      <TouchableOpacity 
-        style={homeStyles.loginButton} 
+      <TouchableOpacity
+        style={homeStyles.loginButton}
         onPress={() => navigation.navigate('Login')}
       >
         <Text style={homeStyles.loginButtonText}>Ir para Login</Text>
