@@ -5,7 +5,7 @@ import styles from './style';
 export default function TelaLogin({ navigation }: { navigation: any }) {
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/logo.png')} style={styles.logo} />
+      <Image source={require('../../assets/logo_empresa.png')} style={styles.logo} />
       
       {/* Campos de entrada */}
       <View style={styles.inputContainer}>
@@ -25,7 +25,7 @@ export default function TelaLogin({ navigation }: { navigation: any }) {
       {/* Botão de Login */}
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText} 
-            onPress={() => navigation.navigate('Home')}>Entrar</Text>
+            onPress={() => navigation.navigate('Atividade')}>Entrar</Text>
       </TouchableOpacity>
 
       {/* Link para Cadastro */}

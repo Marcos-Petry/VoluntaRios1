@@ -8,6 +8,7 @@ import TelaFinanceiro from './src/pages/financeiro';
 import TelaLocalizacao from './src/pages/localizacao';
 import TelaHistoria from './src/pages/historia';
 import TelaContato from './src/pages/contato';
+import TelaAtividade from './src/pages/atividade';
 
 // Definindo o tipo RootStackParamList para as rotas
 export type RootStackParamList = {
@@ -17,6 +18,7 @@ export type RootStackParamList = {
   Localizacao: undefined;
   Historia: undefined;
   Contato: undefined;
+  Atividade: undefined;
 };
 
 // Criando o Stack Navigator
@@ -54,6 +56,11 @@ export default function App() {
         <Stack.Screen
           name="Contato"
           component={TelaContato}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Atividade"
+          component={TelaAtividade}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
