@@ -1,22 +1,64 @@
 import { StyleSheet } from 'react-native';
-
 export const financeiroStyles = StyleSheet.create({
-  container: {
+  mainContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FFF8F5',
+    backgroundColor: '#fff',
+  },
+  contentContainer: {
+    padding: 20,
+  },
+  topSpacing: {
+    height: 20,
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#D9534F',
-    marginBottom: 10,
+    color: '#333',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#006151',
+    marginTop: 20,
   },
   description: {
     fontSize: 16,
+    color: '#555',
+    marginVertical: 10,
+  },
+  buttonContainer: {
+    marginTop: 20,
+  },
+  backButton: {
+    backgroundColor: '#ff6347', // Cor do botão de voltar
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 20,
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  buttonText: {
+    fontSize: 16,
+    color: '#fff',
+  },
+  footer: {
+    backgroundColor: '#f8f8f8',
+    padding: 10,
+    alignItems: 'center',
+  },
+  contactText: {
+    fontSize: 14,
     color: '#333',
-    textAlign: 'center',
-    marginHorizontal: 20,
+  },
+  contactEmail: {
+    fontSize: 14,
+    color: '#006151',
+  },
+  contactPhone: {
+    fontSize: 14,
+    color: '#006151',
   },
 });

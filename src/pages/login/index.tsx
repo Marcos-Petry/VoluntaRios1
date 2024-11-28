@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from './style';
 
-export default function TelaLogin() {
+export default function TelaLogin({ navigation }: { navigation: any }) {
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/logo.png')} style={styles.logo} />
@@ -24,7 +24,8 @@ export default function TelaLogin() {
 
       {/* Botão de Login */}
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Entrar</Text>
+        <Text style={styles.buttonText} 
+            onPress={() => navigation.navigate('Home')}>Entrar</Text>
       </TouchableOpacity>
 
       {/* Link para Cadastro */}

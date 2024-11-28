@@ -1,86 +1,111 @@
-import { StyleSheet, Dimensions } from 'react-native';
-
-const screenWidth = Dimensions.get('window').width;
+import { StyleSheet } from 'react-native';
 
 export const homeStyles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: '#fef7f6',
+    backgroundColor: '#f5f5f5', // Cor de fundo padrão
   },
   contentContainer: {
-    padding: 16,
-    flexGrow: 1,
+    paddingVertical: 20,
+    paddingHorizontal: 15,
   },
   topSpacing: {
-    height: 30, // Espaço no topo da tela
+    height: 20,
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 20,
     textAlign: 'center',
+    color: '#e85858', // Cor primária
+    marginBottom: 20,
+  },
+  image: {
+    width: '100%',
+    height: 500,
+    resizeMode: 'contain',
+    marginBottom: 20,
   },
   content: {
-    alignItems: 'center',
-    marginTop: 20,
+    backgroundColor: '#ffffff',
+    borderRadius: 10,
+    padding: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 3,
+    marginBottom: 20, // Adicionando espaço entre a seção e os botões
   },
   sectionTitle: {
-    fontSize: 28,
-    color: '#e85858',
+    fontSize: 20,
     fontWeight: 'bold',
+    color: '#333333',
     marginBottom: 10,
   },
   description: {
-    textAlign: 'center',
-    color: '#333',
+    fontSize: 16,
+    color: '#666666',
     marginBottom: 20,
+    lineHeight: 22,
   },
   buttonContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'center',
-    width: '100%',
-    marginVertical: 20,
+    justifyContent: 'space-between',
   },
   button: {
     backgroundColor: '#e85858',
-    paddingVertical: 15,
-    borderRadius: 10,
-    margin: 8,
-    width: (screenWidth - 64) / 2, // Ajusta largura para 2 botões por linha com espaçamento
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    marginBottom: 10, // Espaço entre os botões
+    minWidth: '48%', // Largura mínima dos botões para ocupar duas colunas
     alignItems: 'center',
   },
   buttonText: {
-    color: '#fff',
-    fontWeight: 'bold',
+    color: '#ffffff',
+    fontSize: 16,
+    textAlign: 'center',
   },
   loginButton: {
-    alignSelf: 'center',
     backgroundColor: '#e85858',
-    paddingVertical: 8,
-    paddingHorizontal: 20,
-    borderRadius: 20,
-    marginBottom: 10, // Margin to separate from footer
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    alignSelf: 'center',
+    marginVertical: 20,
   },
   loginButtonText: {
-    color: '#fff',
-    fontWeight: 'bold',
+    color: '#ffffff',
+    fontSize: 16,
   },
   footer: {
-    backgroundColor: '#fef7f6',
+    backgroundColor: '#e85858',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
     alignItems: 'center',
-    paddingVertical: 20,
-    borderTopWidth: 1,
-    borderColor: '#ccc',
   },
   contactText: {
-    fontWeight: 'bold',
-    color: '#333',
+    color: '#ffffff',
+    fontSize: 16,
+    marginBottom: 5,
   },
   contactEmail: {
-    color: '#333',
+    color: '#ffffff',
+    fontSize: 14,
   },
   contactPhone: {
-    color: '#333',
+    color: '#ffffff',
+    fontSize: 14,
+  },
+  backButton: {
+    backgroundColor: '#ff6347', // Cor do botão de voltar
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 20,
+    alignItems: 'center',
+    marginBottom: 20,
+    color: '#fff',
   },
 });
