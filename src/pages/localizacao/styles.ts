@@ -45,8 +45,9 @@ export const financeiroStyles = StyleSheet.create({
     color: '#fff',
   },
   footer: {
-    backgroundColor: '#f8f8f8',
-    padding: 10,
+    backgroundColor: '#e85858',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
     alignItems: 'center',
   },
   contactText: {

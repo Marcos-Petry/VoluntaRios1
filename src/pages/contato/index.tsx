@@ -13,7 +13,7 @@ export default function TelaContato() {
         <Text style={financeiroStyles.title}>Entre em Contato Conosco</Text>
 
         {/* Conteúdo da página */}
-        <View style={financeiroStyles.content}>
+        <View style={financeiroStyles.contentContainer}>
           <Text style={financeiroStyles.sectionTitle}>Estamos aqui para ajudar!</Text>
           <Text style={financeiroStyles.description}>
             Caso tenha alguma dúvida ou queira saber mais sobre o Projeto VoluntaRios, não hesite em entrar em contato conosco.
@@ -45,14 +45,6 @@ export default function TelaContato() {
             </TouchableOpacity>
           </View>
         </View>
-
-        {/* Botão Voltar para a Home */}
-        <TouchableOpacity
-          style={financeiroStyles.backButton}
-          onPress={() => navigation.navigate('Home')}
-        >
-          <Text style={financeiroStyles.buttonText}>Voltar para a Home</Text>
-        </TouchableOpacity>
       </ScrollView>
 
       {/* Rodapé fixado na parte inferior */}

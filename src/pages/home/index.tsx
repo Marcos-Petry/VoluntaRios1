@@ -29,8 +29,8 @@ export default function TelaHome({ navigation }: Props) {
 
           {/* Imagem ilustrativa */}
           <Image
-                source={require('./../../assets/IMG_0481.png')} // Substitua pela URL ou caminho local da imagem
-              style={homeStyles.image}
+            source={require('./../../assets/IMG_0481.png')} // Substitua pela URL ou caminho local da imagem
+            style={homeStyles.image}
           />
         </View>
 
@@ -40,28 +40,28 @@ export default function TelaHome({ navigation }: Props) {
             style={homeStyles.button}
             onPress={() => navigation.navigate('Financeiro')}
           >
-            <Text style={homeStyles.buttonText}><b>FINANCEIRO</b></Text>
+            <Text style={[homeStyles.buttonText, { fontWeight: 'bold' }]}>FINANCEIRO</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={homeStyles.button}
             onPress={() => navigation.navigate('Localizacao')}
           >
-            <Text style={homeStyles.buttonText}><b>LOCALIZAÇÃO</b></Text>
+            <Text style={[homeStyles.buttonText, { fontWeight: 'bold' }]}>LOCALIZAÇÃO</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={homeStyles.button}
             onPress={() => navigation.navigate('Historia')}
           >
-            <Text style={homeStyles.buttonText}><b>HISTÓRIA</b></Text>
+            <Text style={[homeStyles.buttonText, { fontWeight: 'bold' }]}>HISTÓRIA</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={homeStyles.button}
             onPress={() => navigation.navigate('Contato')}
           >
-            <Text style={homeStyles.buttonText}><b>CONTATOS</b></Text>
+            <Text style={[homeStyles.buttonText, { fontWeight: 'bold' }]}>CONTATOS</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

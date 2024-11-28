@@ -13,7 +13,7 @@ export default function TelaLocalizacao({ navigation }: { navigation: any }) {
         <Text style={financeiroStyles.title}>Localização do Projeto VoluntaRios</Text>
 
         {/* Conteúdo da página */}
-        <View style={financeiroStyles.content}>
+        <View style={financeiroStyles.contentContainer}>
           <Text style={financeiroStyles.sectionTitle}>Onde estamos?</Text>
           <Text style={financeiroStyles.description}>
             O Projeto VoluntaRios está situado no coração da cidade de Itajaí, ao longo das margens do Rio Itajaí-Açu. Nossa atuação se concentra nas áreas ribeirinhas, mas buscamos expandir nosso alcance para outras regiões do município e além.
@@ -30,14 +30,6 @@ export default function TelaLocalizacao({ navigation }: { navigation: any }) {
           </Text>
         </View>
       </ScrollView>
-
-      {/* Botão Voltar para a Home */}
-      <TouchableOpacity
-        style={financeiroStyles.backButton}
-        onPress={() => navigation.navigate('Home')}
-      >
-        <Text style={financeiroStyles.buttonText}>Voltar para a Home</Text>
-      </TouchableOpacity>
 
       {/* Rodapé fixado na parte inferior */}
       <View style={financeiroStyles.footer}>

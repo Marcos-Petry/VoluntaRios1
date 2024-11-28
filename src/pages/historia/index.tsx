@@ -29,14 +29,6 @@ export default function TelaHistoria() {
             O Projeto VoluntáRios pretende expandir sua atuação nos próximos anos, alcançando mais voluntários e criando uma rede de apoio ainda mais forte. A conscientização sobre a importância do rio e a preservação ambiental são as bases para o nosso crescimento contínuo.
           </Text>
         </View>
-
-        {/* Botão Voltar para a Home */}
-        <TouchableOpacity
-          style={financeiroStyles.backButton}
-          onPress={() => navigation.navigate('Home')}
-        >
-          <Text style={financeiroStyles.buttonText}>Voltar para a Home</Text>
-        </TouchableOpacity>
       </ScrollView>
 
       {/* Rodapé fixado na parte inferior */}
